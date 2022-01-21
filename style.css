@@ -1,0 +1,224 @@
+html,body{
+    background-color: #04011c;
+    color:#00dbe3;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.forma{
+    display: flex;
+    flex-direction: column;
+    background-color: #00dbe3;
+    opacity: 0.7;
+    color:#04011c;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.forma select, .forma input, .forma textarea{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #04011c;
+    color: white;
+    border-color: #04011c;
+    border-radius: 25px;
+    
+}
+.forma textarea{
+    height: 50px;
+    padding: 10px;
+}
+.entitet{
+    width: 20%;
+    height: calc(auto + 25px);
+    margin: 10px;
+    text-align: center;
+    background-color: #04011c;
+    position: relative;
+    font-size: 22px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.entitet button{
+    border-radius: 15px;
+    padding: 5px;
+    width: 100px;
+    height: auto;
+    background-color: transparent;
+    border-color: #00dbe3;
+    color:#00dbe3;
+}
+.entitet button:hover:enabled{
+    background-color: #00dbe3;
+    border-color: #00dbe3;
+    color:#04011c;
+    cursor: pointer;
+}
+.kontejnerPrikaz
+{
+    height: auto;
+    display: flex;
+    position: absolute;
+    font-size: 24px;
+    opacity: 95%;
+    flex-wrap: wrap;
+    left: 0;
+    right: 0;
+    background-color: #00dbe3;
+    opacity: 0.7;
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+}
+.updateScreen{
+    position: absolute;
+    background-color: #00dbe3;
+    color: #04011c;
+    width: 50%;
+    margin: auto;
+    height: auto;
+    min-height: 30%;
+    padding: 15px;
+    display: inline-grid;
+    border-radius: 25px;
+    font-size: 20px;
+    left: 25%;
+}
+.updateScreen select, .updateScreen input{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #04011c;
+    color: white;
+    border-color: #04011c;
+    border-radius: 25px;
+    max-height: 25px;
+    padding: 5px;
+}
+.updateScreen textarea{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #04011c;
+    color: white;
+    border-color: #04011c;
+    border-radius: 25px;
+    height: 75px;
+    padding: 10px;
+}
+.updateScreen button, .forma button{
+    margin: 7px;
+    border-radius: 15px;
+    padding: 5px;
+    width: 100px;
+    height: auto;
+    background-color: #04011c;
+    border-color: #00dbe3;
+    color:#00dbe3;
+    margin-left: auto;
+    margin-right: auto;
+}
+.updateScreen button:hover,.forma button:hover{
+    background-color: #00dbe3;
+    border-color: #04011c;
+    color:#04011c;
+    cursor: pointer;
+}
+.buttonDiv{
+   margin-top: 25px;
+}
+.tabovi button{
+    margin: 7px;
+    border-radius: 15px;
+    padding: 5px;
+    width: 75px;
+    height: auto;
+    background-color: transparent;
+    border-color: #00dbe3;
+    color:#00dbe3;
+}
+
+.tabovi button:hover:enabled{
+    background-color: #00dbe3;
+    border-color: #00dbe3;
+    color:#04011c;
+    cursor: pointer;
+}
+.tabovi button:disabled{
+    opacity: 0.7;
+    border-color: #00dbe3;
+    color:#00dbe3;
+}
+.active{
+    background-color: #00dbe3 !important;
+    color:#04011c !important;
+}
+.labelUpdate{
+    max-height: 25px;
+}
+.headLabel{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.ddlBiblioteke{
+    margin-bottom: 25px;
+    background-color: transparent;
+    color: white;
+    border-color: #00dbe3;
+    border-radius: 25px;
+    padding: 5px;
+}
+.bibliotekeOption{ 
+    background-color: #04011c !important;
+    color: white !important;
+    border-color: #00dbe3;
+    border-radius: 25px;
+    width: 50px;
+}
+
+@media only screen and (max-width: 1124px) {
+    .entitet {
+      width: 300px;
+    }
+    .kontejnerPrikaz{
+        width: 50%;
+        justify-content: center;
+    }
+    .forma{
+        width: 50%;
+    }
+    .ddlBiblioteke {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .bibliotekeOption{
+        font-size: 10px;
+    }
+    .tabovi button{
+        margin: 7px;
+        border-radius: 25px;
+        padding: 15px;
+        width: 125px;
+    }
+    .forma input, .forma select{
+        width: 50%;
+        height: 25px;
+    }
+    .forma button{
+        border-radius: 25px;
+        width: 150px;
+        height: 50px;
+    }
+    .entitet button {
+        border-radius: 25px;
+        width: 100px;
+        height: 40px;
+    }
+  }
